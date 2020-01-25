@@ -1,1 +1,192 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'PlumbCondensed', sans-serif;
+}
+
+@font-face {
+  font-family: 'PlumbCondensed';
+  src: url("fonts/ofont.ru_Plumb.eot");
+  src: local("☺"), url("fonts/ofont.ru_Plumb.woff") format("woff"), url("fonts/ofont.ru_Plumb.ttf") format("truetype"), url("fonts/ofont.ru_Plumb.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlumbCondensed';
+  src: url("fonts/plumbcondensed-light.eot");
+  src: local("☺"), url("fonts/plumbcondensed-light.woff") format("woff"), url("fonts/plumbcondensed-light.ttf") format("truetype"), url("fonts/plumbcondensed-light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url("fonts/trebuc.eot");
+  src: local("☺"), url("fonts/trebuc.woff") format("woff"), url("fonts/trebuc.ttf") format("truetype"), url("fonts/trebuc.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url("fonts/trebucbd.eot");
+  src: local("☺"), url("fonts/trebucbd.woff") format("woff"), url("fonts/trebucbd.ttf") format("truetype"), url("fonts/trebucbd.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url("fonts/trebucit.eot");
+  src: local("☺"), url("fonts/trebucit.woff") format("woff"), url("fonts/trebucit.ttf") format("truetype"), url("fonts/trebucit.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+address {
+  background-color: rgba(21, 21, 21, 0.78);
+}
+
+.address__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 5% px;
+}
+
+.address__text {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  font-family: 'PlumbCondensed', sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 8px 5px 7px;
+}
+
+.address__text_red {
+  color: #f5135c;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 17px 0 22px;
+  background-color: #5b749a;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.25)), to(rgba(255, 255, 255, 0.25)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%);
+}
+
+.logo__text {
+  color: #ffffff;
+  font-family: "Trebuchet MS";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 51px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  display: block;
+  padding: 8px 0 0 10px;
+}
+
+.logo__text_red {
+  color: #f5135c;
+}
+
+header {
+  height: 80vh;
+  background-image: url(img/first_screen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.menu__link {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 7px;
+  position: relative;
+}
+
+.menu__link:hover .red-line {
+  display: block;
+}
+
+.menu__link:before {
+  content: " ";
+  background-image: url(img/divide.svg);
+}
+
+.red-line {
+  width: 95%;
+  height: 2px;
+  background: #f5135c;
+  margin: 0px auto;
+  position: absolute;
+  bottom: 5px;
+  display: none;
+}
+
+.menu__link_span {
+  display: block;
+  padding: 10px 30px 2px;
+  color: #383838;
+  font-family: 'PlumbCondensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
