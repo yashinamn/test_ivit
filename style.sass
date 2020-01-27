@@ -207,9 +207,10 @@ header
     height: 82px
     background: rgba(255, 255, 255, 0.24)
     position: absolute
-    bottom: 23px
+    bottom: 30px
     width: 100%
     align-items: center
+    justify-content: flex-end
 
 .figcap
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.46)
@@ -379,6 +380,60 @@ main
     bottom: 80px
     left: 45%                                                         
 
+.manager-qestion
+    position: absolute
+    bottom: 10px
+    right: 10%
+    width: 288px
+    height: 356px
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url(img/manager_qestion.png)
+    &__tittle
+        text-align: center
+        margin: 36px auto 0
+        width: 144px
+        height: 41px
+        color: #56575b
+        font-family: "Trebuchet MS"
+        font-size: 18px
+        font-weight: 700
+        line-height: 23.71px
+        text-transform: uppercase
+    &__input-wrapper
+        display: grid
+        grid-gap: 11px
+        grid-template-columns: 241px
+        grid-template-rows: 26px 25px 98px
+        margin: 20px 24px 11px
+    &__input
+        border: 1px solid rgba(0, 0, 0, 0.17);
+        color: #969494
+        font-family: "Trebuchet MS"
+        font-size: 14px
+        font-style: italic
+        resize: none
+    &__button
+        margin: 0 54px
+        color: #ffffff
+        font-family: "Trebuchet MS"
+        font-size: 14px
+        font-weight: 400
+        line-height: 16.68px
+        width: 174px
+        height: 31px
+        line-height: 31px
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 2px 0 rgba(255, 255, 255, 0.5)
+        border-radius: 3px
+        background-color: #63799c
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.25) 0%, rgba(255, 255, 255, 0.25) 100%)
+        text-transform: none
+        &:hover
+            background-color: #7e93b5
+        &:active
+            background-color: #1a3764
+
+
 .details-snils__img
     margin: 70px auto 80px
     width: 900px
@@ -423,7 +478,7 @@ footer
 .footer-wrapper
     display: flex
     justify-content: space-between
-    padding: 20px 14px
+    padding: 20px 14px 30px
 
 .form-title
     max-width: 323px
@@ -437,6 +492,7 @@ footer
 .form-grid
     display: grid
     grid-template-columns: 243px 243px
+    grid-template-rows: 100px
     grid-gap: 14px
     margin-top: 17px
     margin-bottom: 28px
@@ -445,9 +501,22 @@ footer
     display: grid
     grid-gap: 11px
     grid-template-columns: 1fr
+    grid-template-rows: 26px 26px 26px
 
 input
-    padding: 5px 15px
+    padding: 5px 10px
+    border: none
+    color: #969494
+    font-family: "PlumbCondensed"
+    font-size: 17px
+    font-weight: 300
+textarea
+    padding: 5px 10px
+    border: none
+    color: #969494
+    font-family: "PlumbCondensed"
+    font-size: 17px
+    font-weight: 300
 
 button
     width: 155px
@@ -460,22 +529,33 @@ button
     font-weight: 400
     line-height: 24px
     text-transform: uppercase
+    border: none
+    transition-duration: 0,5s
+    &:hover
+        transform: scale(1.1)
+        transition-duration: 0,5s 
+
 
 .PHONE
     text-align: right
+    margin-top: 15px
     height: 69px
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
     color: #fffefe
     font-family: "PlumbCondensed"
-    font-size: 30px
+    font-size: 36px
     font-weight: 300
     line-height: 40px
     text-transform: uppercase
+    &_little
+        font-size: 30px
 
 .address__footer
     background-color: inherit
+    padding-bottom: 20px
 
-
+.address__text_footer
+    font-size: 21px
 
 @media screen and (max-width: 900px)
     .what-snils__header
@@ -501,8 +581,12 @@ button
         text-align: center
     .where-snils__img
         display: none
+    .where-snils__grid
+        grid-template-columns: 1fr
     .where-snils__grid_title
         margin: 10px auto
+    .where-snils__footer_text
+        left: 10%
     .details-snils__img
         display: none
     .snils
@@ -538,9 +622,12 @@ button
         max-width: 95%
     .where-snils__grid
         grid-template-columns: 1fr
+    .where-snils__text
+        font-size: 10px
     .where-snils__footer_text
-        left: 20%
-        bottom: 150px
+        display: none
+    .manager-qestion
+        right: 5%
     .menu_footer
         grid-template-columns: 1fr
     .footer-wrapper
@@ -553,3 +640,5 @@ button
         margin: 0 auto 20px
     .PHONE
         text-align: center
+    .address__text_footer
+        font-size: 15px
